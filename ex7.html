@@ -1,0 +1,29 @@
+<!-- create a text input that when button is pressed, will show what was written on screen~ !-->
+<html>
+
+<head>
+    <title>Yuuki` Todo App</title>
+</head>
+
+<body>
+
+    <input id="input-text" type="text" />
+    <button id="test-button" onclick="addText()">Add</button>
+    <script>
+
+
+        function addText() {
+            
+            let element = document.createElement(`div`);
+            let textbox = document.getElementById(`input-text`);
+            let textBotContent = textbox.value;
+            element.innerText = textBotContent;
+            document.body.appendChild(element);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

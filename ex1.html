@@ -1,0 +1,37 @@
+
+<!-- uppercase strings !-->
+<html>
+
+<head>
+    <title>Yuuki` Todo App</title>
+</head>
+
+<body>
+
+    <button>Teste</button>
+    <script>
+
+        let arrayStrings = [`Get groceries`, `Wash car`, `Make dinner`];
+
+
+
+
+        arrayStrings.forEach(function (todoTitle) {
+            let element = document.createElement(`div`);
+            element.innerText = toUpper(todoTitle);;
+
+            document.body.appendChild(element);
+
+
+        });
+        function toUpper(upper) {
+            result = upper.toUpperCase();
+            return result;
+        }
+
+
+
+    </script>
+</body>
+
+</html>

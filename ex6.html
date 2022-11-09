@@ -1,0 +1,27 @@
+<!-- use a button to -1 a number to a var~ !-->
+<html>
+
+<head>
+    <title>Yuuki` Todo App</title>
+</head>
+
+<body>
+    <div id="counter"></div>
+    <button id="test-button" onclick="countDown()">Down</button>
+    <script>
+        let count = 1;
+
+
+
+
+        function countDown() {
+           let counter = document.getElementById(`counter`);
+           counter.innerText = count-1;
+        }
+
+
+
+    </script>
+</body>
+
+</html>

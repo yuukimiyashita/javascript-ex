@@ -1,0 +1,27 @@
+<!-- use a button to add 1 to a var~ !-->
+<html>
+
+<head>
+    <title>Yuuki` Todo App</title>
+</head>
+
+<body>
+    <div id="counter"></div>
+    <button id="test-button" onclick="countUp()">Up</button>
+    <script>
+        let count = 0;
+
+
+
+
+        function countUp() {
+           let counter = document.getElementById(`counter`);
+           counter.innerText = count+1;
+        }
+
+
+
+    </script>
+</body>
+
+</html>

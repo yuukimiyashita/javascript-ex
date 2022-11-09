@@ -1,0 +1,37 @@
+<!-- create a div Cart and render foods pressing buttons. clean the div with another function (clean div using ID)~ !-->
+<html>
+
+<head>
+    <title>Yuuki` Todo App</title>
+</head>
+
+<body>
+
+    <button id="d-button" onclick="addFood(`Apple`)">Apple</button>
+    <button id="tomato-button" onclick="addFood(`Tomato`)">Tomato</button>
+    <button id="eggs-button" onclick="addFood(`Eggs`)">Eggs</button>
+    <button id="test-button" onclick="clearList()">Clear</button>
+
+    <div id="cart"></div>
+    <script>
+
+
+        function addFood(food) {
+            let element = document.createElement(`div`);
+            element.innerText = food;
+            let cart = document.getElementById(`cart`);
+            cart.appendChild(element);
+        }
+        
+        function clearList() {
+           
+            document.getElementById(`cart`).innerHTML = ``;
+            
+        }
+
+
+
+    </script>
+</body>
+
+</html>
