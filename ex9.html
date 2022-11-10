@@ -1,0 +1,40 @@
+<!-- create a cm to inch converter~ !-->
+<html>
+
+<head>
+    <title>Yuuki` Todo App</title>
+</head>
+
+<body>
+    <input id="todo-title" type="text" />
+
+    <button onclick="convertToCm()">Convert to cm</button>
+    <button onclick="convertToInch()">Convert to inch</button>
+
+    <div id="result"></div>
+    <script>
+
+        function convertToCm() {
+            const textbox = document.getElementById(`todo-title`);
+            const title = textbox.value;
+            const element = document.createElement(`div`);
+            element.innerText = Number(title) * 2.54;
+            const divResult = document.getElementById(`result`);
+            divResult.appendChild(element);
+        }
+        function convertToInch() {
+            const textbox = document.getElementById(`todo-title`);
+            const title = textbox.value;
+            const element = document.createElement(`div`);
+            element.innerText = Number(title) / 2.54;
+            const divResult = document.getElementById(`result`);
+            divResult.appendChild(element);
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
